@@ -39,14 +39,14 @@ module.exports = {
     {
       name: '心愿',
       artist: 'Falcom Sound Team jdk',
-      url: 'https://music.163.com/outchain/player?type=2&id=379785',
+      url: 'music.163.com/song/media/outer/url?id=379785.mp3',
       cover:
         'https://p2.music.126.net/-QgrpnBhavRcLtaBaad5Lw==/52776558150270.jpg?param=90y90'
     },
     {
       name: '北京东路的日子',
       artist: 'Falcom Sound Team jdk',
-      url: 'music.163.com/outchain/player?type=2&id=458245372',
+      url: 'music.163.com/song/media/outer/url?id=458245372.mp3',
       cover:
         'https://p1.music.126.net/gKqUqY3IuVNzijz0WSLYlg==/109951162855880374.jpg?param=90y90'
     }
