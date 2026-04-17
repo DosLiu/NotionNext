@@ -61,7 +61,7 @@ const Hero = props => {
       style={{ zIndex: 1 }}
       className='w-full h-screen relative bg-black'>
       <div className='text-white absolute inset-0 w-full h-full'>
-        <div className='absolute left-1/2 top-[39%] z-10 flex w-full max-w-[90vw] -translate-x-1/2 -translate-y-1/2 flex-col items-center px-6 text-center'>
+        <div className='absolute left-1/2 top-[35%] z-10 flex w-full max-w-[90vw] -translate-x-1/2 -translate-y-1/2 flex-col items-center px-6 text-center'>
           {/* 站点标题 */}
           <div className='font-black text-4xl md:text-5xl shadow-text'>
             {siteInfo?.title || siteConfig('TITLE')}
