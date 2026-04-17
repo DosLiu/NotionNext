@@ -60,20 +60,22 @@ const Hero = props => {
       id='header'
       style={{ zIndex: 1 }}
       className='w-full h-screen relative bg-black'>
-      <div className='text-white absolute bottom-0 flex flex-col h-full items-center justify-center w-full '>
-        {/* 站点标题 */}
-        <div className='font-black text-4xl md:text-5xl shadow-text'>
-          {siteInfo?.title || siteConfig('TITLE')}
-        </div>
-        {/* 站点欢迎语 */}
-        <div className='mt-2 h-12 items-center text-center font-medium shadow-text text-lg'>
-          <span id='typed' />
-        </div>
+      <div className='text-white absolute inset-0 w-full h-full'>
+        <div className='absolute left-1/2 top-[39%] z-10 flex w-full max-w-[90vw] -translate-x-1/2 -translate-y-1/2 flex-col items-center px-6 text-center'>
+          {/* 站点标题 */}
+          <div className='font-black text-4xl md:text-5xl shadow-text'>
+            {siteInfo?.title || siteConfig('TITLE')}
+          </div>
+          {/* 站点欢迎语 */}
+          <div className='mt-2 h-12 items-center text-center font-medium shadow-text text-lg'>
+            <span id='typed' />
+          </div>
 
-        {/* 首页导航大按钮 */}
-        {siteConfig('HEXO_HOME_NAV_BUTTONS', null, CONFIG) && (
-          <NavButtonGroup {...props} />
-        )}
+          {/* 首页导航大按钮 */}
+          {siteConfig('HEXO_HOME_NAV_BUTTONS', null, CONFIG) && (
+            <NavButtonGroup {...props} />
+          )}
+        </div>
 
         {/* 滚动按钮 */}
         <div
